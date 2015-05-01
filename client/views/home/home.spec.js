@@ -14,7 +14,7 @@ describe('Controller: HomeCtrl', function () {
     });
   }));
 
-  it('should ...', function () {
+  it('should hav a nav element',  function () {
     expect(1).toBe(1);
   });
 

@@ -10,4 +10,8 @@ describe('home route', function () {
     expect(element.all(by.css('div')).first().getText()).toBe('HomeCtrl');
   });
 
+  it('should have a nav element', function(){
+    expect(element(by.binding('nav'))).toBe.defined;
+  });
+  
 });

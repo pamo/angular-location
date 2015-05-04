@@ -6,7 +6,8 @@ angular.module('bangularSpike')
     var vm = this;
 
     angular.extend(vm, {
-      name: 'IssuesCtrl'
+      name: 'IssuesCtrl',
+      title: 'Ready Set Go!'
     });
 
   });

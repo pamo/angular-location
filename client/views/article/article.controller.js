@@ -6,7 +6,8 @@ angular.module('bangularSpike')
     var vm = this;
 
     angular.extend(vm, {
-      name: 'ArticleCtrl'
+      name: 'ArticleCtrl',
+      title: 'Dog People vs. Cat People: Who\'s More Intelligent?'
     });
 
   });

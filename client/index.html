@@ -4,10 +4,11 @@
 
     <base href="/">
 
-    <title>bangularSpike</title>
+    <title>Angular Url Spike</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="fragment" content="!" />
 
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
@@ -25,8 +26,7 @@
   </head>
   <body>
 
-    <strong>bangularSpike</strong>
-
+    <nav></nav>
     <div ng-view></div>
 
     <!-- build:js app.js -->
@@ -44,14 +44,13 @@
     <script src="directives/nav/nav.directive.js"></script>
     <script src="views/article/article.controller.js"></script>
     <script src="views/article/article.js"></script>
-    <script src="views/issues/issues.controller.js"></script>
-    <script src="views/issues/issues.js"></script>
     <script src="views/home/home.controller.js"></script>
     <script src="views/home/home.js"></script>
+    <script src="views/issues/issues.controller.js"></script>
+    <script src="views/issues/issues.js"></script>
     <!-- endinject -->
 
     <!-- endbuild -->
-    <nav></nav>
 
   </body>
 </html>

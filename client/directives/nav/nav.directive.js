@@ -7,7 +7,7 @@ angular.module('bangularSpike')
       templateUrl: 'directives/nav/nav.html',
       link: function(scope, element, attrs) { 
         var links = element.find('a'),
-        onClass = attrs.nav || 'on',
+        onClass = attrs.active || 'on',
         link, url, currentLink, urlMap = {};
 
         for(var i = 0; i < links.length; i++){

@@ -1,6 +1,12 @@
 @import "../directives/nav/nav";
 @import "../views/issues/issues";
 @import "../views/article/article";
+
 body {
   font-family: sans-serif;
+}
+a {
+  color: #2E0854;
+  text-decoration: none;
+  font-size: 1em;
 }

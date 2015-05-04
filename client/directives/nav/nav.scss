@@ -1,0 +1,16 @@
+.nav {
+	list-style-type: none;
+}
+
+.nav__link {
+	display: inline-block;
+}
+
+.nav__link--active, 
+.nav__link--active:visited, 
+.nav__link--active:active, 
+.nav__link--active:hover {
+	color: #488214;
+	font-weight: bold;
+}
+

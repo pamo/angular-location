@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="bangularSpike">
+<html>
   <head>
 
     <base href="/">
@@ -11,7 +11,7 @@
     <meta name="fragment" content="!" />
 
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-
+    
     <!-- build:css app.css -->
 
     <!-- bower:css -->
@@ -23,11 +23,17 @@
 
     <!-- endbuild -->
 
-  </head>
-  <body>
-
-    <nav active="nav__link--active"></nav>
-    <div ng-view></div>
+    <!--[if lte IE 8]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" data-build="exclude" data-remove="exclude"></script>
+      <script>
+      // The ieshiv takes care of our ui.directives, bootstrap module directives and 
+      // AngularJS's ng-view, ng-include, ng-pluralize and ng-switch directives.
+      // However, IF you have custom directives (yours or someone else's) then
+      // enumerate the list of tags in window.myCustomTags
+      window.myCustomTags = [ 'nav' ]; // optional
+      </script>
+      <script src="bower_components/angular-ui-utils/ie-shiv.min.js" data-build="exclude" data-remove="exclude"></script>
+    <![endif]-->	
 
     <!-- build:js app.js -->
 
@@ -52,5 +58,9 @@
 
     <!-- endbuild -->
 
+  </head>
+  <body ng-app="bangularSpike" id="ng-app" data-ng-app="bangularSpike">
+    <div nav active="nav__link--active"></div>
+    <div ng-view></div>
   </body>
 </html>

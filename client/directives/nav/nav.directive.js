@@ -3,7 +3,7 @@
 angular.module('bangularSpike')
   .directive('nav', function ($location) {
     return {
-      restrict: 'E',
+      restrict: 'EA',
       templateUrl: 'directives/nav/nav.html',
       link: function(scope, element, attrs) { 
         var links = element.find('a'),
